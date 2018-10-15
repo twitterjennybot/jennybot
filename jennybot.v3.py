@@ -37,6 +37,6 @@ for follower in tweepy.Cursor(api.followers).items():
 
 elu_follower = random.choice(list_follower)
 
-api.update_with_media( imagedechat, 'Coucou @{0} voici une superbe image de chat:'.format(elu_follower.screen_name))
+api.update_with_media( imagedechat, 'Coucou @{0} ! Voici une superbe image de chat :'.format(elu_follower.screen_name))
 
 
